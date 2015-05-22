@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Random Werkspot screenshot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000 no-repeat center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+        .image1 { background-image: url('img/screenshot-1.jpg'); }
+        .image2 { background-image: url('img/screenshot-2.jpg'); }
+        .image3 { background-image: url('img/screenshot-3.jpg'); }
+        .image4 { background-image: url('img/screenshot-4.jpg'); }
+        .image5 { background-image: url('img/screenshot-5.jpg'); }
+        .image6 { background-image: url('img/screenshot-6.jpg'); }
+        .image7 { background-image: url('img/screenshot-7.jpg'); }
+        .image8 { background-image: url('img/screenshot-8.jpg'); }
+        .image9 { background-image: url('img/screenshot-9.jpg'); }
+        .image10 { background-image: url('img/screenshot-10.jpg'); }
+        .image11 { background-image: url('img/screenshot-11.jpg'); }
+    </style>
+</head>
+<body>
+    <script>
+        var max = 11, min = 1, i = Math.floor(Math.random()*(max-min+1)+min);
+        document.querySelector('body').classList.add('image' + i);
+    </script>
+</body>
+</html>
